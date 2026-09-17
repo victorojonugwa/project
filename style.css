@@ -340,3 +340,14 @@ footer .social-links a:hover {
         flex-direction: column;
     }
 }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keeps the header above other page elements */
+    background-color: #2C1A1D;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
