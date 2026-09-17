@@ -145,28 +145,6 @@ header nav a:hover {
     object-fit: cover;
 }
 
-/* Card Badges */
-.badge {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background-color: #E67E22;
-    color: #FFFFFF;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.badge.spicy {
-    background-color: #C0392B;
-}
-
-.badge.chef {
-    background-color: #27AE60;
-}
-
 .card-body {
     padding: 20px;
 }
