@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -35,18 +39,24 @@ img {
     background-color: #D35400;
 }
 
+/* Header & Sticky Nav */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #2C1A1D;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-header .logo {
+header .logo a {
     color: #E67E22;
     font-size: 24px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 header nav a {
@@ -61,6 +71,7 @@ header nav a:hover {
     color: #E67E22;
 }
 
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -95,6 +106,7 @@ header nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Menu Section */
 .menu-section {
     padding: 60px 40px;
     text-align: center;
@@ -113,6 +125,7 @@ header nav a:hover {
 }
 
 .card {
+    position: relative;
     background-color: #FFFFFF;
     border-radius: 10px;
     overflow: hidden;
@@ -132,6 +145,28 @@ header nav a:hover {
     object-fit: cover;
 }
 
+/* Card Badges */
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #E67E22;
+    color: #FFFFFF;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.badge.spicy {
+    background-color: #C0392B;
+}
+
+.badge.chef {
+    background-color: #27AE60;
+}
+
 .card-body {
     padding: 20px;
 }
@@ -140,6 +175,7 @@ header nav a:hover {
     color: #2C1A1D;
     font-size: 20px;
     margin-bottom: 10px;
+    text-transform: capitalize;
 }
 
 .card-body p {
@@ -154,6 +190,7 @@ header nav a:hover {
     color: #E67E22;
 }
 
+/* About Section */
 .about-section {
     display: flex;
     align-items: center;
@@ -180,6 +217,7 @@ header nav a:hover {
     font-size: 32px;
     color: #2C1A1D;
     margin-bottom: 15px;
+    text-transform: capitalize;
 }
 
 .about-text p {
@@ -214,6 +252,7 @@ header nav a:hover {
     margin-bottom: 0;
 }
 
+/* Contact Section */
 .contact-section {
     padding: 60px 40px;
     text-align: center;
@@ -223,6 +262,7 @@ header nav a:hover {
     font-size: 32px;
     color: #2C1A1D;
     margin-bottom: 40px;
+    text-transform: capitalize;
 }
 
 .contact-container {
@@ -250,6 +290,15 @@ header nav a:hover {
     color: #555555;
 }
 
+.contact-info a {
+    color: #E67E22;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 .contact-form label {
     display: block;
     margin-bottom: 5px;
@@ -265,6 +314,7 @@ header nav a:hover {
     border: 1px solid #CCCCCC;
     border-radius: 5px;
     font-size: 14px;
+    font-family: inherit;
 }
 
 .contact-form input:focus, 
@@ -273,6 +323,11 @@ header nav a:hover {
     border-color: #E67E22;
 }
 
+.contact-form .btn {
+    width: 100%;
+}
+
+/* Footer */
 footer {
     background-color: #2C1A1D;
     color: #FFFDF9;
@@ -295,7 +350,7 @@ footer p {
 footer .social-links a {
     color: #FFFDF9;
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 10px;
     transition: color 0.3s ease;
 }
 
@@ -303,6 +358,7 @@ footer .social-links a:hover {
     color: #E67E22;
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -339,15 +395,4 @@ footer .social-links a:hover {
     .contact-container {
         flex-direction: column;
     }
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #2C1A1D;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
