@@ -252,7 +252,7 @@ header nav a:hover {
     margin-bottom: 0;
 }
 
-/* Contact Section */
+
 .contact-section {
     padding: 60px 40px;
     text-align: center;
@@ -327,7 +327,7 @@ header nav a:hover {
     width: 100%;
 }
 
-/* Footer */
+
 footer {
     background-color: #2C1A1D;
     color: #FFFDF9;
@@ -358,7 +358,7 @@ footer .social-links a:hover {
     color: #E67E22;
 }
 
-/* Mobile Responsiveness */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
